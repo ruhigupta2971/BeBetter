@@ -1,18 +1,21 @@
-import "./styles.css";
+import React from "react";
 import { Route, Routes } from "react-router-dom";
+import "./styles.css";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Media from "./routes/Media";
-
+import Navbar from "./components/Navbar";
+import LoginSignup from "./components/LoginSignup";
 
 export default function App() {
   return (
     <div className="App">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Media" element={<Media />} />
-        <Route path="/About" element={<About />} />
-        
+        <Route path="/media" element={<Media />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/loginsignup" element={<LoginSignup />} />
       </Routes>
     </div>
   );

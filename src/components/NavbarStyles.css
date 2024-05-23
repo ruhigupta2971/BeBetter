@@ -15,8 +15,6 @@
     rgba(15, 15, 15, 0.368) 157.95%,
     #0b0b0b -1.06%
   );
-  /*background-blend-mode: color-burn;
-  mix-blend-mode: color-burn;*/
   position: fixed;
   z-index: 9999;
 }
@@ -52,7 +50,7 @@
 }
 
 .nav-links-mobile {
-  color: #252323;
+  color: #b8acac;
 }
 
 .nav-links-mobile:hover {
@@ -62,6 +60,7 @@
 .menu-icon {
   display: none;
 }
+
 
 @media screen and (max-width: 850px) {
   .NavbarItems {

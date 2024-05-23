@@ -15,7 +15,8 @@ export const MenuItems = [
     cName: "nav-links",
   },
   {
-    url: "/LoginSignup",
+    title: "Login/Signup",
+    url: "/loginsignup",
     cName: "nav-links-mobile",
     icon: "fa-solid fa-circle-user fa-2x",
   },

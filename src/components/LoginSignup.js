@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 
 const LoginSignup = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate(); 
 
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState({
@@ -73,8 +73,7 @@ const LoginSignup = () => {
         toast.success('Login successful', {
           position: "top-center",
         });
-        // Redirect to a protected page or home page
-        navigate("/"); // Use navigate to redirect
+        navigate("/"); 
       } else {
         toast.error('Invalid email or password', {
           position: "top-center",

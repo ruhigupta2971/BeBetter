@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 function Media() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero cName="hero-mid" heroImg={MediaImg} text="" />
       <Stories />
       <Footer />

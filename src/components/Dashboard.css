@@ -1,0 +1,24 @@
+.dashboard-container {
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+
+  
+  .logout-button {
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: #ffffff;
+  }
+  
+  .logout-button:hover {
+    background: rgb(132, 128, 128);
+    color: black;
+    font-weight: 600;
+  }
+  

@@ -6,6 +6,7 @@ import About from "./routes/About";
 import Media from "./routes/Media";
 import Navbar from "./components/Navbar";
 import LoginSignup from "./components/LoginSignup";
+import Dashboard from './components/Dashboard';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/about" element={<About />} />
         <Route path="/loginsignup" element={<LoginSignup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

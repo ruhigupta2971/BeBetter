@@ -7,7 +7,7 @@ import ContactForm from "../components/ContactForm";
 function About() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero
         cName="hero-mid"
         heroImg={AboutImg}

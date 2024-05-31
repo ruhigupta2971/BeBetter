@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./DonationForm.css";
 
 function DonationForm({ onClose }) {
-
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -12,8 +11,6 @@ function DonationForm({ onClose }) {
     message: ""
   });
 
-  console.log('FORM DATA==>', formData)
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -22,10 +19,15 @@ function DonationForm({ onClose }) {
     }));
   };
 
-
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("donationData", JSON.stringify(formData));
+    
+    // Update donation count
+    let donationCount = parseInt(localStorage.getItem("donationCount"), 10) || 0;
+    donationCount += 1;
+    localStorage.setItem("donationCount", donationCount);
+
     alert("Donation information submitted successfully!");
     setFormData({
       fullName: "",
@@ -95,7 +97,7 @@ function DonationForm({ onClose }) {
           Close
         </button>
       </div>
-  </div>
+    </div>
   );
 }
 
